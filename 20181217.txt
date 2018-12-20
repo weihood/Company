@@ -1,0 +1,2107 @@
+//- 導覽列
+nav.navbar.navbar-default.navbar-fixed-top.at_top
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+
+    #navbar.navbar-collapse.collapse
+      ul.nav.navbar-nav
+        li
+          a(href='#section_zxyel_fix11') Zxyel(用戶: 1-10 ; trunk: 11-12)
+        li
+          a(href='#section_dlink_fix11') Dlink(用戶: 1-10 ; trunk: 11-12)
+        li
+          a(href='#section_zxyel_fix10') Zxyel(用戶: 1-9 ; trunk: 10-12)
+        li
+          a(href='#section_dlink_fix10') Dlink(用戶: 1-9 ; trunk: 10-12)
+
+                    
+//------------------------------------------------------------    
+// Zxyel (fixd 11 or 12)      section 1
+
+section#section_zxyel_fix11
+  h1.topic Zxyel (用戶: 1-10 ; trunk: 11-12)
+
+  .container
+    textarea(rows="20", placeholder = "請輸入vlan")#input 
+    .button_input
+      button#btn_create_vlan 建vlan 
+      button#btn_delete_vlan 拆vlan 
+      button#btn_input_clear 清除
+      
+    textarea(rows="20", placeholder = "輸出結果").output 
+    //- ou1~ou10  輸入框隱藏
+    textarea(rows="20", placeholder = "輸出結果").ou1 
+    textarea(rows="20", placeholder = "輸出結果").ou2 
+    textarea(rows="20", placeholder = "輸出結果").ou3     
+    textarea(rows="20", placeholder = "輸出結果").ou4 
+    textarea(rows="20", placeholder = "輸出結果").ou5   
+    textarea(rows="20", placeholder = "輸出結果").ou6 
+    textarea(rows="20", placeholder = "輸出結果").ou7 
+    textarea(rows="20", placeholder = "輸出結果").ou8 
+    textarea(rows="20", placeholder = "輸出結果").ou9
+    textarea(rows="20", placeholder = "輸出結果").ou10
+
+    .button_output
+      button#btn_copy 單鍵複製   
+      button#btn_output_clear 清除
+      select(name="option")#selectBox4
+        option(value="0" disabled selected) 單port vlan 
+        option(value="1") port 1 vlan
+        option(value="2") port 2 vlan
+        option(value="3") port 3 vlan
+        option(value="4") port 4 vlan
+        option(value="5") port 5 vlan
+        option(value="6") port 6 vlan
+        option(value="7") port 7 vlan
+        option(value="8") port 8 vlan
+        option(value="9") port 9 vlan
+        option(value="10") port 10 vlan
+      input(name="name",placeholder="原本的port (ex: ,1)")#input_word7 
+      input(name="name",placeholder="替換的port (ex: ,2)")#input_word8
+      button#btn_replace4  替換 
+  
+//------------------------------------------------------------   
+// Dlink (fixd 11 or 12)      section 2    
+    
+section#section_dlink_fix11
+   h1.topic Dlink (用戶: 1-10 ; trunk: 11-12)
+   .container
+    textarea(rows="20", placeholder = "請輸入vlan")#input2 
+    .button_input
+      button#btn_create_vlan_dlink 建vlan 
+      button#btn_delete_vlan_dlink 拆vlan 
+      button#btn_input_clear_dlink 清除
+      
+    textarea(rows="20", placeholder = "輸出結果").output2
+    //- outp1~outp10  輸入框隱藏
+    textarea(rows="20", placeholder = "輸出結果").outp1 
+    textarea(rows="20", placeholder = "輸出結果").outp2 
+    textarea(rows="20", placeholder = "輸出結果").outp3     
+    textarea(rows="20", placeholder = "輸出結果").outp4 
+    textarea(rows="20", placeholder = "輸出結果").outp5   
+    textarea(rows="20", placeholder = "輸出結果").outp6 
+    textarea(rows="20", placeholder = "輸出結果").outp7 
+    textarea(rows="20", placeholder = "輸出結果").outp8 
+    textarea(rows="20", placeholder = "輸出結果").outp9
+    textarea(rows="20", placeholder = "輸出結果").outp10
+    .button_output
+      button#btn_copy_dlink 單鍵複製   
+      button#btn_output_clear_dlink 清除
+      select(name="option")#selectBox3
+        option(value="" disabled selected) 單port vlan 
+        option(value="1") port 1 vlan
+        option(value="2") port 2 vlan
+        option(value="3") port 3 vlan
+        option(value="4") port 4 vlan
+        option(value="5") port 5 vlan
+        option(value="6") port 6 vlan
+        option(value="7") port 7 vlan
+        option(value="8") port 8 vlan
+        option(value="9") port 9 vlan
+        option(value="10") port 10 vlan
+      input(name="name",placeholder="原本的port (ex: tag 1)")#input_word5 
+      input(name="name",placeholder="替換的port (ex: tag 2)")#input_word6
+      button#btn_replace3  替換 
+      
+//------------------------------------------------------------ 
+// Zxyel (fixd 10 or 12)      section 3  
+
+section#section_zxyel_fix10
+   h1.topic Zxyel (用戶: 1-9 ; trunk: 10-12)
+   .container
+    textarea(rows="20", placeholder = "請輸入vlan")#input3 
+    .button_input
+      button#btn_create_vlan2 建vlan 
+      button#btn_delete_vlan2 拆vlan 
+      button#btn_input_clear2 清除
+
+    textarea(rows="20", placeholder = "輸出結果").output3
+    //- out1~out10  輸入框隱藏
+    textarea(rows="20", placeholder = "輸出結果").out1 
+    textarea(rows="20", placeholder = "輸出結果").out2 
+    textarea(rows="20", placeholder = "輸出結果").out3     
+    textarea(rows="20", placeholder = "輸出結果").out4 
+    textarea(rows="20", placeholder = "輸出結果").out5   
+    textarea(rows="20", placeholder = "輸出結果").out6 
+    textarea(rows="20", placeholder = "輸出結果").out7 
+    textarea(rows="20", placeholder = "輸出結果").out8 
+    textarea(rows="20", placeholder = "輸出結果").out9
+  
+    .button_output
+      button#btn_copy2 單鍵複製
+      button#btn_output_clear2 清除
+      select(name="option")#selectBox
+        option(value="" disabled selected) 單port vlan 
+        option(value="1") port 1 vlan
+        option(value="2") port 2 vlan
+        option(value="3") port 3 vlan
+        option(value="4") port 4 vlan
+        option(value="5") port 5 vlan
+        option(value="6") port 6 vlan
+        option(value="7") port 7 vlan
+        option(value="8") port 8 vlan
+        option(value="9") port 9 vlan
+      input(name="name",placeholder="原本的port (ex: ,1)")#input_word1 
+      input(name="name",placeholder="替換的port (ex: ,2)")#input_word2
+      button#btn_replace  替換
+      
+//------------------------------------------------------------       
+// Dlink (fixd 10 or 12)      section 4      
+      
+section#section_dlink_fix10
+   h1.topic Dlink (用戶: 1-9 ; trunk: 10-12)
+   .container.end
+    textarea(rows="20", placeholder = "請輸入vlan")#input4 
+    .button_input
+      button#btn_create_vlan_dlink2 建vlan 
+      button#btn_delete_vlan_dlink2 拆vlan 
+      button#btn_input_clear_dlink2 清除
+         
+    textarea(rows="20", placeholder = "輸出結果").output4
+    //- outpu1~outpu10  輸入框隱藏
+    textarea(rows="20", placeholder = "輸出結果").outpu1 
+    textarea(rows="20", placeholder = "輸出結果").outpu2 
+    textarea(rows="20", placeholder = "輸出結果").outpu3     
+    textarea(rows="20", placeholder = "輸出結果").outpu4 
+    textarea(rows="20", placeholder = "輸出結果").outpu5   
+    textarea(rows="20", placeholder = "輸出結果").outpu6 
+    textarea(rows="20", placeholder = "輸出結果").outpu7 
+    textarea(rows="20", placeholder = "輸出結果").outpu8 
+    textarea(rows="20", placeholder = "輸出結果").outpu9
+    
+    
+    .button_output
+      button#btn_copy_dlink2 單鍵複製
+      button#btn_output_clear_dlink2 清除
+      select(name="option")#selectBox2
+        option(value="" disabled selected) 單port vlan 
+        option(value="1") port 1 vlan
+        option(value="2") port 2 vlan
+        option(value="3") port 3 vlan
+        option(value="4") port 4 vlan
+        option(value="5") port 5 vlan
+        option(value="6") port 6 vlan
+        option(value="7") port 7 vlan
+        option(value="8") port 8 vlan
+        option(value="9") port 9 vlan
+      input(name="name",placeholder="原本的port (ex: tag 1)")#input_word3 
+      input(name="name",placeholder="替換的port (ex: tag 2)")#input_word4
+      button#btn_replace2  替換       
+      
+footer#footer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *
+//   border: solid 1px
+
+html,body
+  width: 100%
+  height: 100%
+  // display: flex
+  // justify-content: center
+  // align-items: center
+  background-color: #CFD8DC
+  
+//-------------------------------------
+//導覽列
+
+nav.navbar
+  transition: 0.5s
+  a
+    transition: 0.5s
+//--導覽列在上方時透明
+nav.navbar.at_top
+  background-color: #BBDEFB
+  a, a:visited
+    color: #1565C0
+//-------------------------------------  
+section
+  padding: 130px
+  
+.topic  
+  text-align: center
+  margin-right: auto
+  margin-left: auto
+  margin-bottom: 40px
+  color: #1565C0
+  background-color: #90CAF9
+  width: 800px
+  
+.container
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  .button_input, .button_output
+    width: 50px
+    display: inblock
+    margin-right: 60px
+
+  .output,.output2,.output3,.output4
+    margin-left: 50px
+    width: 450px
+    border: solid 1px
+    
+  textarea
+    margin-right: 60px
+   
+  button
+    height: 50px
+    width: 100px
+    padding: 8px
+    color: #1565C0
+    margin-bottom: 20px
+    cursor: pointer
+    &:hover
+      background-color: rgba(gray,0.8)
+      color: white
+  #copythis,#copythis2,#copythis3,#copythis4  
+    margin-right: 50px
+//-------------------------------------   
+// 1~10  輸入框隱藏    
+.ou1,.ou2,.ou3,.ou4,.ou5,.ou6,.ou7,.ou8,.ou9,.ou10
+  display: none           
+.out1,.out2,.out3,.out4,.out5,.out6,.out7,.out8,.out9
+  display: none 
+.outp1,.outp2,.outp3,.outp4,.outp5,.outp6,.outp7,.outp8,.outp9,.outp10
+  display: none   
+.outpu1,.outpu2,.outpu3,.outpu4,.outpu5,.outpu6,.outpu7,.outpu8,.outpu9
+  display: none   
+
+  
+  
+#input_word1,#input_word2,#input_word3,#input_word4,#input_word5,#input_word6,#input_word7,#input_word8
+  width: 150px
+  margin-top: 20px
+  margin-left: -20px
+  padding: 5px
+  
+#btn_replace,#btn_replace2,#btn_replace3,#btn_replace4
+  margin-top: 20px
+
+  
+footer#footer
+  background-color: #BBDEFB
+  text-align: center
+  height: 200px
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Zxyel (fixd 11 or 12)
+$("#btn_create_vlan").click(function(){
+  var input = $("#input").val()
+  $("#selectBox4").val("");
+  $(".output").text("")
+  var input1 = input
+  // console.log(input)
+  var datas = []
+  var datas1 = []
+  var vlan = []
+  var totals = []
+  var te = input.replace("中華電信北區OPTIMA","")
+  var temp = te.split("1-")
+  for(var i=1; i<temp.length ; i++){
+    var a= temp[i].replace("\n",",")
+    var q=a.replace("   ,","")
+    var aa=q.replace("(MOD)","").trim()
+    if(aa.indexOf("     ")!=-1){
+       var aaa=aa.split("     ") 
+    } else {
+       var aaa=aa.split("   ") 
+    } 
+   
+    datas.push(aaa) 
+  }
+  for(var i=0;i<datas.length;i++){
+    var b=datas[i]
+    if(b[1]==undefined){   
+    }else{
+      datas1.push(b) 
+    }   
+  }  
+
+  for(var i=0;i<datas1.length;i++){
+    var c=datas1[i]
+    var num=parseInt(c[0])
+    var vlan=c[1].split(",")
+    totals[i]= {
+    name: num,
+    vlan: vlan
+    }
+  }
+
+  for(var i=0;i<datas1.length;i++){
+  if(totals[i].name==1){
+    var tmp_array1 = totals[i].vlan
+  } else if(totals[i].name==2){
+    var tmp_array2 = totals[i].vlan
+  } else if(totals[i].name==3){
+    var tmp_array3 = totals[i].vlan
+  } else if(totals[i].name==4){
+    var tmp_array4 = totals[i].vlan
+  } else if(totals[i].name==5){
+    var tmp_array5 = totals[i].vlan
+  } else if(totals[i].name==6){
+    var tmp_array6 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==9){
+    var tmp_array9 = totals[i].vlan
+  } else if(totals[i].name==10){
+    var tmp_array10 = totals[i].vlan
+  } else if(totals[i].name==11){
+    var tmp_array11 = totals[i].vlan
+  }else if(totals[i].name==12){
+    var tmp_array12 = totals[i].vlan
+  }
+  }
+
+  function create_zxyel_vlan(vlan,num){
+    if (tmp_array11!=null && tmp_array12!=null){
+      if (tmp_array11.indexOf(vlan)!=-1){ 
+       $(".ou"+num).append("vlan "+vlan+"\n"+"fixed 11,"+num+"\n"+"exit"+"\n")
+       $(".output").append("vlan "+vlan+"\n"+"fixed 11,"+num+"\n"+"exit"+"\n") 
+      }
+      else if(tmp_array12.indexOf(vlan)!=-1){
+        $(".ou"+num).append("vlan "+vlan+"\n"+"fixed 12,"+num+"\n"+"exit"+"\n")
+        $(".output").append("vlan "+vlan+"\n"+"fixed 12,"+num+"\n"+"exit"+"\n")    
+   } }
+    else if(tmp_array11==null && tmp_array12!=null){ 
+      if(tmp_array12.indexOf(vlan)!=-1){
+        $(".ou"+num).append("vlan "+vlan+"\n"+"fixed 12,"+num+"\n"+"exit"+"\n")
+        $(".output").append("vlan "+vlan+"\n"+"fixed 12,"+num+"\n"+"exit"+"\n")    
+    } }
+  
+    else if(tmp_array12==null && tmp_array11!=null){ 
+      if(tmp_array11.indexOf(vlan)!=-1){
+       $(".ou"+num).append("vlan "+vlan+"\n"+"fixed 11,"+num+"\n"+"exit"+"\n")
+       $(".output").append("vlan "+vlan+"\n"+"fixed 11,"+num+"\n"+"exit"+"\n") 
+    } }  
+}     
+
+  $(".ou1").html("").append("config"+"\n")
+  $(".ou2").html("").append("config"+"\n")
+  $(".ou3").html("").append("config"+"\n")
+  $(".ou4").html("").append("config"+"\n")
+  $(".ou5").html("").append("config"+"\n")
+  $(".ou6").html("").append("config"+"\n")
+  $(".ou7").html("").append("config"+"\n")
+  $(".ou8").html("").append("config"+"\n")
+  $(".ou9").html("").append("config"+"\n")
+  $(".ou10").html("").append("config"+"\n")
+  $(".output").append("config"+"\n")
+
+  for (var i in tmp_array1) { 
+    create_zxyel_vlan(tmp_array1[i],1)
+   }
+  for (var i in tmp_array2) { 
+    create_zxyel_vlan(tmp_array2[i],2)
+   }
+  for (var i in tmp_array3) { 
+    create_zxyel_vlan(tmp_array3[i],3)
+   }
+  for (var i in tmp_array4) { 
+     create_zxyel_vlan(tmp_array4[i],4)
+   }
+  for (var i in tmp_array5) { 
+      create_zxyel_vlan(tmp_array5[i],5)
+   }
+  for (var i in tmp_array6) { 
+     create_zxyel_vlan(tmp_array6[i],6)
+   }
+  for (var i in tmp_array7) { 
+      create_zxyel_vlan(tmp_array7[i],7)
+   }
+  for (var i in tmp_array8) { 
+       create_zxyel_vlan(tmp_array8[i],8)
+   }
+  for (var i in tmp_array9) { 
+       create_zxyel_vlan(tmp_array9[i],9)
+   }
+
+
+  for (var i in tmp_array10) { 
+      create_zxyel_vlan(tmp_array10[i],10)
+   }
+  
+  $(".output").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou1").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou2").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou3").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou4").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou5").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou6").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou7").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou8").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou9").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou10").append("exit"+"\n"+"wr mem 1"+"\n")
+  var input = $("#input").val(input1)
+  
+})  
+
+$("#btn_delete_vlan").click(function(){
+  var input = $("#input").val()
+  $("#selectBox4").val("");
+  $(".output").text("")
+  var input1 = input
+  // console.log(input)
+  var datas = []
+  var datas1 = []
+  var vlan = []
+  var totals = []
+  var te = input.replace("中華電信北區OPTIMA","")
+  var temp = te.split("1-")
+  for(var i=1; i<temp.length ; i++){
+    var a= temp[i].replace("\n",",")
+    var q=a.replace("   ,","")
+    var aa=q.replace("(MOD)","").trim()
+    if(aa.indexOf("     ")!=-1){
+       var aaa=aa.split("     ") 
+    } else {
+       var aaa=aa.split("   ") 
+    } 
+   
+    datas.push(aaa) 
+
+  }
+  for(var i=0;i<datas.length;i++){
+    var b=datas[i]
+     // console.log(b)
+    if(b[1]==undefined){   
+    }else{
+      datas1.push(b) 
+    }   
+  }  
+
+  for(var i=0;i<datas1.length;i++){
+    // console.log(i)
+    var c=datas1[i]
+     // console.log(c)
+    var num=parseInt(c[0])
+    var vlan=c[1].split(",")
+    // console.log(vlan)
+    totals[i]= {
+    name: num,
+    vlan: vlan
+    }
+  }
+  
+  for(var i=0;i<datas1.length;i++){
+    if(totals[i].name==1){
+    var tmp_array1 = totals[i].vlan
+    console.log(tmp_array1)
+  } else if(totals[i].name==2){
+    var tmp_array2 = totals[i].vlan
+    console.log(tmp_array2)
+  } else if(totals[i].name==3){
+    var tmp_array3 = totals[i].vlan
+  } else if(totals[i].name==4){
+    var tmp_array4 = totals[i].vlan
+  } else if(totals[i].name==5){
+    var tmp_array5 = totals[i].vlan
+  } else if(totals[i].name==6){
+    var tmp_array6 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==9){
+    var tmp_array9 = totals[i].vlan
+  } else if(totals[i].name==10){
+    var tmp_array10 = totals[i].vlan
+  } else if(totals[i].name==11){
+    var tmp_array11 = totals[i].vlan
+  }else if(totals[i].name==12){
+    var tmp_array12 = totals[i].vlan
+  }
+  }
+  
+   function delete_zxyel_vlan(vlan,num){
+    $(".ou"+num).append("no vlan "+vlan+"\n")
+    $(".output").append("no vlan "+vlan+"\n")
+} 
+  
+  $(".ou1").html("").append("config"+"\n")
+  $(".ou2").html("").append("config"+"\n")
+  $(".ou3").html("").append("config"+"\n")
+  $(".ou4").html("").append("config"+"\n")
+  $(".ou5").html("").append("config"+"\n")
+  $(".ou6").html("").append("config"+"\n")
+  $(".ou7").html("").append("config"+"\n")
+  $(".ou8").html("").append("config"+"\n")
+  $(".ou9").html("").append("config"+"\n")
+  $(".ou10").html("").append("config"+"\n")
+  $(".output").append("config"+"\n")
+
+  for (var i in tmp_array1) { 
+    delete_zxyel_vlan(tmp_array1[i],1)
+   }
+  for (var i in tmp_array2) { 
+    delete_zxyel_vlan(tmp_array2[i],2)
+   }
+  for (var i in tmp_array3) { 
+    delete_zxyel_vlan(tmp_array3[i],3)
+   }
+  for (var i in tmp_array4) { 
+     delete_zxyel_vlan(tmp_array4[i],4)
+   }
+  for (var i in tmp_array5) { 
+     delete_zxyel_vlan(tmp_array5[i],5)
+   }
+  for (var i in tmp_array6) { 
+     delete_zxyel_vlan(tmp_array6[i],6)
+   }
+  for (var i in tmp_array7) { 
+     delete_zxyel_vlan(tmp_array7[i],7)
+   }
+  for (var i in tmp_array8) { 
+     delete_zxyel_vlan(tmp_array8[i],8)
+   }
+  for (var i in tmp_array9) { 
+     delete_zxyel_vlan(tmp_array9[i],9)
+   }
+  for (var i in tmp_array10) { 
+     delete_zxyel_vlan(tmp_array10[i],10)
+   }
+  
+
+  $(".output").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou1").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou2").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou3").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou4").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou5").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou6").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou7").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou8").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou9").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".ou10").append("exit"+"\n"+"wr mem 1"+"\n")
+  var input = input1
+  
+})  
+
+$("#btn_input_clear").click(function(){
+  var input = $("#input").val("")
+  $("#selectBox4").val("");
+  var x7= $("#input_word7").val("")
+  var x8= $("#input_word8").val("")
+})
+
+$("#btn_output_clear").click(function(){
+  var input = $(".output").text("")
+  $("#selectBox4").val("");
+  var x7= $("#input_word7").val("")
+  var x8= $("#input_word8").val("")
+})
+
+$("#selectBox4").change(function(){
+    var te_1= $('.ou1').text()
+    var te_2= $('.ou2').text()
+    var te_3= $('.ou3').text()
+    var te_4= $('.ou4').text()
+    var te_5= $('.ou5').text()
+    var te_6= $('.ou6').text()
+    var te_7= $('.ou7').text()
+    var te_8= $('.ou8').text()
+    var te_9= $('.ou9').text()
+    var te_10= $('.ou10').text()
+    var t = $(this).val(); 
+    console.log(t)
+    if(t== "1"){   
+    $(".output").text(te_1)
+    }else if(t== "2"){  
+    $(".output").text(te_2)
+    }else if(t== "3"){  
+    $(".output").text(te_3)
+    }else if(t== "4"){   
+    $(".output").text(te_4)  
+    }else if(t== "5"){  
+    $(".output").text(te_5)
+    }else if(t== "6"){  
+    $(".output").text(te_6)
+    }else if(t== "7"){  
+    $(".output").text(te_7)
+    }else if(t== "8"){  
+    $(".output").text(te_8)
+    }else if(t== "9"){   
+    $(".output").text(te_9)
+    }else if(t== "10"){   
+    $(".output").text(te_10)
+    }
+})
+
+$("#btn_copy").click(function(){
+  var clip_area = $('.output');
+  $("#selectBox4").val("");
+  clip_area.text();
+  clip_area.select();
+  document.execCommand('copy');
+});
+
+$("#btn_replace4").click(function(){
+
+  var temp_text= $(".output").text()
+  $("#selectBox4").val("");
+  var x7= $("#input_word7").val()
+  var x8= $("#input_word8").val()
+   
+  function highlightText(text,word,word2){
+  var replaceRegExp = new RegExp("("+word+")","g")
+  return text.replace(replaceRegExp,word2)   
+}
+  
+  var textHighlighted =highlightText(temp_text,x7,x8)
+  $(".output").text(textHighlighted)   
+ 
+})
+
+// Dlink (fixd 11 or 12)
+
+$("#btn_create_vlan_dlink").click(function(){
+  var input = $("#input2").val()
+  $("#selectBox3").val("");
+  $(".output2").text("")
+   var input1 = input
+  // console.log(input)
+  var datas = []
+  var datas1 = []
+  var vlan = []
+  var totals = []
+  var te = input.replace("中華電信北區OPTIMA","")
+  var temp = te.split("1-")
+  for(var i=1; i<temp.length ; i++){
+    var a= temp[i].replace("\n",",")
+    var q=a.replace("   ,","")
+    var aa=q.replace("(MOD)","").trim()
+    if(aa.indexOf("     ")!=-1){
+       var aaa=aa.split("     ") 
+    } else {
+       var aaa=aa.split("   ") 
+    } 
+   
+    datas.push(aaa) 
+    
+  }
+
+  console.log(datas.length)
+  for(var i=0;i<datas.length;i++){
+    var b=datas[i]
+     // console.log(b)
+    if(b[1]==undefined){   
+    }else{
+      datas1.push(b) 
+
+    }   
+  }  
+
+  for(var i=0;i<datas1.length;i++){
+    // console.log(i)
+    var c=datas1[i]
+    var num=parseInt(c[0])
+    var vlan=c[1].split(",")
+
+    totals[i]= {
+    name: num,
+    vlan: vlan
+    }
+     // console.log(totals[i])
+  }
+
+  for(var i=0;i<datas1.length;i++){
+  if(totals[i].name==1){
+    var tmp_array1 = totals[i].vlan
+  } else if(totals[i].name==2){
+    var tmp_array2 = totals[i].vlan
+  } else if(totals[i].name==3){
+    var tmp_array3 = totals[i].vlan
+  } else if(totals[i].name==4){
+    var tmp_array4 = totals[i].vlan
+  } else if(totals[i].name==5){
+    var tmp_array5 = totals[i].vlan
+  } else if(totals[i].name==6){
+    var tmp_array6 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==9){
+    var tmp_array9 = totals[i].vlan
+  } else if(totals[i].name==10){
+    var tmp_array10 = totals[i].vlan
+  } else if(totals[i].name==11){
+    var tmp_array11 = totals[i].vlan
+  }else if(totals[i].name==12){
+    var tmp_array12 = totals[i].vlan
+  }
+  }
+  
+  // create vlan v0097 tag 97 
+  // config vlan v0097 add tag 2,11,12 
+  function create_dlink_vlan(vlan,num){
+    if (tmp_array11!= null && tmp_array12!=null) { 
+     if (tmp_array11.indexOf(vlan)!=-1) {  
+        if (vlan<10){
+        $(".outp"+num).append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",11"+"\n")   
+        $(".output2").append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",11"+"\n")
+      }
+        else if(vlan<100){
+        $(".outp"+num).append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",11"+"\n")
+        $(".output2").append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",11"+"\n")
+      }
+        else if(vlan<1000){
+        $(".outp"+num).append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",11"+"\n")
+        $(".output2").append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",11"+"\n")
+      } 
+        else if(vlan<10000){
+        $(".outp"+num).append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",11"+"\n")
+        $(".output2").append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",11"+"\n")
+      }   }               
+     else if (tmp_array12.indexOf(vlan)!=-1){    
+        if (vlan<10){
+          $(".outp"+num).append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",12"+"\n")
+          $(".output2").append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",12"+"\n")
+        }
+        else if(vlan<100){
+          $(".outp"+num).append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",12"+"\n")
+          $(".output2").append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",12"+"\n")
+        }
+        else if(vlan<1000){
+          $(".outp"+num).append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",12"+"\n")
+          $(".output2").append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",12"+"\n")
+        } 
+        else if(vlan<10000){
+          $(".outp"+num).append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",12"+"\n")
+          $(".output2").append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",12"+"\n")
+        } }     
+   }      
+    else if (tmp_array11!= null && tmp_array12==null) { 
+     if (tmp_array11.indexOf(vlan)!=-1) {  
+        if (vlan<10){
+        $(".outp"+num).append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",11"+"\n")   
+        $(".output2").append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",11"+"\n")
+      }
+        else if(vlan<100){
+        $(".outp"+num).append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",11"+"\n")
+        $(".output2").append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",11"+"\n")
+      }
+        else if(vlan<1000){
+        $(".outp"+num).append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",11"+"\n")
+        $(".output2").append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",11"+"\n")
+      } 
+        else if(vlan<10000){
+        $(".outp"+num).append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",11"+"\n")
+        $(".output2").append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",11"+"\n")
+      }   }               
+   }  
+    else if (tmp_array12!= null && tmp_array11==null) { 
+     if (tmp_array12.indexOf(vlan)!=-1){    
+        if (vlan<10){
+          $(".outp"+num).append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",12"+"\n")
+          $(".output2").append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",12"+"\n")
+        }
+        else if(vlan<100){
+          $(".outp"+num).append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",12"+"\n")
+          $(".output2").append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",12"+"\n")
+        }
+        else if(vlan<1000){
+          $(".outp"+num).append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",12"+"\n")
+          $(".output2").append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",12"+"\n")
+        } 
+        else if(vlan<10000){
+          $(".outp"+num).append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",12"+"\n")
+          $(".output2").append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",12"+"\n")
+        } }        
+   }      
+}  
+  
+  $(".outp1").html("")
+  $(".outp2").html("")
+  $(".outp3").html("")
+  $(".outp4").html("")
+  $(".outp5").html("")
+  $(".outp6").html("")
+  $(".outp7").html("")
+  $(".outp8").html("")
+  $(".outp9").html("")
+  $(".outp10").html("")
+  
+  
+  for (var i in tmp_array1) { 
+    create_dlink_vlan(tmp_array1[i],1)
+  }
+
+  for (var i in tmp_array2) { 
+    create_dlink_vlan(tmp_array2[i],2)
+  }
+  for (var i in tmp_array3) { 
+    create_dlink_vlan(tmp_array3[i],3)
+    }
+
+  for (var i in tmp_array4) { 
+    create_dlink_vlan(tmp_array4[i],4)
+    }
+
+  for (var i in tmp_array5) { 
+    create_dlink_vlan(tmp_array5[i],5)
+    }
+
+  for (var i in tmp_array6) { 
+    create_dlink_vlan(tmp_array6[i],6)
+    }
+
+  for (var i in tmp_array7) { 
+      create_dlink_vlan(tmp_array7[i],7)
+    }
+
+  for (var i in tmp_array8) { 
+     create_dlink_vlan(tmp_array8[i],8)
+    }
+
+  for (var i in tmp_array9) { 
+     create_dlink_vlan(tmp_array9[i],9)
+    }
+  
+  for (var i in tmp_array10) { 
+      create_dlink_vlan(tmp_array10[i],10)
+    }
+  
+  $(".output2").append("save"+"\n")
+  $(".outp1").append("save"+"\n")
+  $(".outp2").append("save"+"\n")
+  $(".outp3").append("save"+"\n")
+  $(".outp4").append("save"+"\n")
+  $(".outp5").append("save"+"\n")
+  $(".outp6").append("save"+"\n")
+  $(".outp7").append("save"+"\n")
+  $(".outp8").append("save"+"\n")
+  $(".outp9").append("save"+"\n")
+  $(".outp10").append("save"+"\n")
+  var input = $("#input2").val(input1)
+  
+})  
+
+$("#btn_delete_vlan_dlink").click(function(){
+  var input = $("#input2").val()
+  $("#selectBox3").val("");
+  $(".output2").text("")
+  var input1 = input
+  // console.log(input)
+  var datas = []
+  var datas1 = []
+  var vlan = []
+  var totals = []
+  var te = input.replace("中華電信北區OPTIMA","")
+  var temp = te.split("1-")
+  for(var i=1; i<temp.length ; i++){
+    var a= temp[i].replace("\n",",")
+    var q=a.replace("   ,","")
+    var aa=q.replace("(MOD)","").trim()
+    if(aa.indexOf("     ")!=-1){
+       var aaa=aa.split("     ") 
+    } else {
+       var aaa=aa.split("   ") 
+    } 
+   
+    datas.push(aaa)  
+
+  }
+
+  console.log(datas.length)
+  for(var i=0;i<datas.length;i++){
+    var b=datas[i]
+     // console.log(b)
+    if(b[1]==undefined){   
+    }else{
+      datas1.push(b) 
+
+    }   
+  }  
+
+  for(var i=0;i<datas1.length;i++){
+    // console.log(i)
+    var c=datas1[i]
+     // console.log(c)
+    var num=parseInt(c[0])
+    var vlan=c[1].split(",")
+    // console.log(vlan)
+    totals[i]= {
+    name: num,
+    vlan: vlan
+    }
+     // console.log(totals[i])
+  }
+  
+  for(var i=0;i<datas1.length;i++){
+    if(totals[i].name==1){
+    var tmp_array1 = totals[i].vlan
+    console.log(tmp_array1)
+  } else if(totals[i].name==2){
+    var tmp_array2 = totals[i].vlan
+    console.log(tmp_array2)
+  } else if(totals[i].name==3){
+    var tmp_array3 = totals[i].vlan
+  } else if(totals[i].name==4){
+    var tmp_array4 = totals[i].vlan
+  } else if(totals[i].name==5){
+    var tmp_array5 = totals[i].vlan
+  } else if(totals[i].name==6){
+    var tmp_array6 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==9){
+    var tmp_array9 = totals[i].vlan
+  } else if(totals[i].name==10){
+    var tmp_array10 = totals[i].vlan
+  } else if(totals[i].name==11){
+    var tmp_array11 = totals[i].vlan
+  }else if(totals[i].name==12){
+    var tmp_array12 = totals[i].vlan
+  }
+  }
+   
+  
+  function delete_dlink_vlan(vlan,num){
+      if (vlan<10){
+        $(".outp"+num).append("delete vlan v000"+vlan+"\n")   
+        $(".output2").append("delete vlan v000"+vlan+"\n")
+      }
+      else if(vlan<100){
+         $(".outp"+num).append("delete vlan v00"+vlan+"\n") 
+        $(".output2").append("delete vlan v00"+vlan+"\n")
+      }
+      else if(vlan<1000){
+         $(".outp"+num).append("delete vlan v0"+vlan+"\n") 
+        $(".output2").append("delete vlan v0"+vlan+"\n")
+      } 
+      else if(vlan<10000){
+         $(".outp"+num).append("delete vlan v"+vlan+"\n") 
+        $(".output2").append("delete vlan v"+vlan+"\n")
+      }  
+    
+    
+  }
+
+    $(".outp1").html("")
+    $(".outp2").html("")
+    $(".outp3").html("")
+    $(".outp4").html("")
+    $(".outp5").html("")
+    $(".outp6").html("")
+    $(".outp7").html("")
+    $(".outp8").html("")
+    $(".outp9").html("")
+    $(".outp10").html("")
+  
+  
+   if(typeof(tmp_array1)!="undefined"){
+     for(var i=0;i<tmp_array1.length;i++){
+      delete_dlink_vlan(tmp_array1[i],1)
+     }
+   }
+
+   if(typeof(tmp_array2)!="undefined"){
+     for(var i=0;i<tmp_array2.length;i++){
+       delete_dlink_vlan(tmp_array2[i],2)
+     }
+   }
+
+   if(typeof(tmp_array3)!="undefined"){
+     for(var i=0;i<tmp_array3.length;i++){
+       delete_dlink_vlan(tmp_array3[i],3)
+     }
+   }
+
+
+   if(typeof(tmp_array4)!="undefined"){
+     for(var i=0;i<tmp_array4.length;i++){
+       delete_dlink_vlan(tmp_array4[i],4)
+     }
+   }
+
+   if(typeof(tmp_array5)!="undefined"){
+     for(var i=0;i<tmp_array5.length;i++){
+       delete_dlink_vlan(tmp_array5[i],5)
+     }
+   }
+    
+   if(typeof(tmp_array6)!="undefined"){
+     for(var i=0;i<tmp_array6.length;i++){
+       delete_dlink_vlan(tmp_array6[i],6)
+     }
+   }
+
+   if(typeof(tmp_array7)!="undefined"){
+     for(var i=0;i<tmp_array7.length;i++){
+       delete_dlink_vlan(tmp_array7[i],7)
+     }
+   }
+
+   if(typeof(tmp_array8)!="undefined"){
+     for(var i=0;i<tmp_array8.length;i++){
+       delete_dlink_vlan(tmp_array8[i],8)
+     }
+   }
+
+   if(typeof(tmp_array9)!="undefined"){
+     for(var i=0;i<tmp_array9.length;i++){
+       delete_dlink_vlan(tmp_array9[i],9)
+     }
+   }
+
+   if(typeof(tmp_array10)!="undefined"){
+     for(var i=0;i<tmp_array10.length;i++){
+      delete_dlink_vlan(tmp_array10[i],10)
+     }
+   }
+  $(".outp1").append("save"+"\n")
+  $(".outp2").append("save"+"\n")
+  $(".outp3").append("save"+"\n")
+  $(".outp4").append("save"+"\n")
+  $(".outp5").append("save"+"\n")
+  $(".outp6").append("save"+"\n")
+  $(".outp7").append("save"+"\n")
+  $(".outp8").append("save"+"\n")
+  $(".outp9").append("save"+"\n")
+  $(".outp10").append("save"+"\n")
+  $(".output2").append("save"+"\n")
+   var input = input1
+  
+}) 
+
+$("#selectBox3").change(function(){
+    var tem_1= $('.outp1').text()
+    var tem_2= $('.outp2').text()
+    var tem_3= $('.outp3').text()
+    var tem_4= $('.outp4').text()
+    var tem_5= $('.outp5').text()
+    var tem_6= $('.outp6').text()
+    var tem_7= $('.outp7').text()
+    var tem_8= $('.outp8').text()
+    var tem_9= $('.outp9').text()
+    var tem_10= $('.outp10').text()
+    var t = $(this).val(); 
+    console.log(t)
+    if(t== "1"){   
+     $(".output2").text(tem_1)
+    }else if(t== "2"){  
+    $(".output2").text(tem_2)
+    }else if(t== "3"){  
+    $(".output2").text(tem_3)
+    }else if(t== "4"){   
+    $(".output2").text(tem_4)  
+    }else if(t== "5"){  
+    $(".output2").text(tem_5)
+    }else if(t== "6"){  
+    $(".output2").text(tem_6)
+    }else if(t== "7"){  
+    $(".output2").text(tem_7)
+    }else if(t== "8"){  
+    $(".output2").text(tem_8)
+    }else if(t== "9"){   
+    $(".output2").text(tem_9)
+    }else if(t== "10"){   
+    $(".output2").text(tem_10)
+    }
+})
+
+$("#btn_input_clear_dlink").click(function(){
+  var input = $("#input2").val("")
+  $("#selectBox3").val("");
+})
+
+$("#btn_output_clear_dlink").click(function(){
+  var input = $(".output2").text("")
+  $("#selectBox3").val("");
+  var x5= $("#input_word5").val("")
+  var x6= $("#input_word6").val("")
+})
+
+$("#btn_copy_dlink").click(function(){
+  var clip_area = $('.output2');
+  $("#selectBox3").val("");
+  clip_area.text();
+  clip_area.select();
+  document.execCommand('copy');
+});
+
+$("#btn_replace3").click(function(){
+
+  var temp_text= $(".output2").text()
+  $("#selectBox3").val("");
+  var x5= $("#input_word5").val()
+  var x6= $("#input_word6").val()
+   
+  function highlightText(text,word,word2){
+  var replaceRegExp = new RegExp("("+word+")","g")
+  return text.replace(replaceRegExp,word2)   
+}
+  
+  var textHighlighted =highlightText(temp_text,x5,x6)
+  $(".output2").text(textHighlighted)   
+ 
+})
+
+// Zxyel (fixd 10 or 12)
+$("#btn_create_vlan2").click(function(){
+  var input = $("#input3").val()
+  $("#selectBox").val("");
+  $(".output3").text("")
+   var input1 = input
+  // console.log(input)
+  var datas = []
+  var datas1 = []
+  var vlan = []
+  var totals = []
+  var te = input.replace("中華電信北區OPTIMA","")
+  var temp = te.split("1-")
+  for(var i=1; i<temp.length ; i++){
+    var a= temp[i].replace("\n",",")
+    var q=a.replace("   ,","")
+    var aa=q.replace("(MOD)","").trim()
+    if(aa.indexOf("     ")!=-1){
+       var aaa=aa.split("     ") 
+    } else {
+       var aaa=aa.split("   ") 
+    } 
+   
+    datas.push(aaa) 
+  }
+  for(var i=0;i<datas.length;i++){
+    var b=datas[i]
+    if(b[1]==undefined){   
+    }else{
+      datas1.push(b) 
+    }   
+  }  
+
+  for(var i=0;i<datas1.length;i++){
+    var c=datas1[i]
+    var num=parseInt(c[0])
+    var vlan=c[1].split(",")
+    totals[i]= {
+    name: num,
+    vlan: vlan
+    }
+  }
+
+  for(var i=0;i<datas1.length;i++){
+  if(totals[i].name==1){
+    var tmp_array1 = totals[i].vlan
+  } else if(totals[i].name==2){
+    var tmp_array2 = totals[i].vlan
+  } else if(totals[i].name==3){
+    var tmp_array3 = totals[i].vlan
+  } else if(totals[i].name==4){
+    var tmp_array4 = totals[i].vlan
+  } else if(totals[i].name==5){
+    var tmp_array5 = totals[i].vlan
+  } else if(totals[i].name==6){
+    var tmp_array6 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==9){
+    var tmp_array9 = totals[i].vlan
+  } else if(totals[i].name==10){
+    var tmp_array10 = totals[i].vlan
+  } else if(totals[i].name==11){
+    var tmp_array11 = totals[i].vlan
+  }else if(totals[i].name==12){
+    var tmp_array12 = totals[i].vlan
+  }
+  }
+  
+  
+function create_zxyel_vlan(vlan,num){
+    if (tmp_array10!=null && tmp_array12!=null){
+      if (tmp_array10.indexOf(vlan)!=-1){ 
+       $(".out"+num).append("vlan "+vlan+"\n"+"fixed 10,"+num+"\n"+"exit"+"\n")
+       $(".output3").append("vlan "+vlan+"\n"+"fixed 10,"+num+"\n"+"exit"+"\n") 
+      }
+      else if(tmp_array12.indexOf(vlan)!=-1){
+        $(".out"+num).append("vlan "+vlan+"\n"+"fixed 12,"+num+"\n"+"exit"+"\n")
+        $(".output3").append("vlan "+vlan+"\n"+"fixed 12,"+num+"\n"+"exit"+"\n")    
+   } }
+    else if(tmp_array10==null && tmp_array12!=null){ 
+      if(tmp_array12.indexOf(vlan)!=-1){
+        $(".out"+num).append("vlan "+vlan+"\n"+"fixed 12,"+num+"\n"+"exit"+"\n")
+        $(".output3").append("vlan "+vlan+"\n"+"fixed 12,"+num+"\n"+"exit"+"\n")    
+    } }
+  
+    else if(tmp_array12=null && tmp_array10!=null){ 
+      if(tmp_array10.indexOf(vlan)!=-1){
+       $(".out"+num).append("vlan "+vlan+"\n"+"fixed 10,"+num+"\n"+"exit"+"\n")
+       $(".output3").append("vlan "+vlan+"\n"+"fixed 10,"+num+"\n"+"exit"+"\n") 
+    } }  
+}      
+
+  $(".out1").html("").append("config"+"\n")
+  $(".out2").html("").append("config"+"\n")
+  $(".out3").html("").append("config"+"\n")
+  $(".out4").html("").append("config"+"\n")
+  $(".out5").html("").append("config"+"\n")
+  $(".out6").html("").append("config"+"\n")
+  $(".out7").html("").append("config"+"\n")
+  $(".out8").html("").append("config"+"\n")
+  $(".out9").html("").append("config"+"\n")
+  $(".output3").append("config"+"\n")
+
+  for (var i in tmp_array1) { 
+    create_zxyel_vlan(tmp_array1[i],1)
+   }
+  for (var i in tmp_array2) { 
+    create_zxyel_vlan(tmp_array2[i],2)
+   }
+  for (var i in tmp_array3) { 
+    create_zxyel_vlan(tmp_array3[i],3)
+   }
+  for (var i in tmp_array4) { 
+     create_zxyel_vlan(tmp_array4[i],4)
+   }
+  for (var i in tmp_array5) { 
+      create_zxyel_vlan(tmp_array5[i],5)
+   }
+  for (var i in tmp_array6) { 
+     create_zxyel_vlan(tmp_array6[i],6)
+   }
+  for (var i in tmp_array7) { 
+      create_zxyel_vlan(tmp_array7[i],7)
+   }
+  for (var i in tmp_array8) { 
+      create_zxyel_vlan(tmp_array8[i],8)
+   }
+  for (var i in tmp_array9) { 
+      create_zxyel_vlan(tmp_array9[i],9)
+   }
+
+  
+  $(".output3").append("exit"+"\n"+"wr mem 1"+"\n")
+ $(".out1").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out2").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out3").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out4").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out5").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out6").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out7").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out8").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out9").append("exit"+"\n"+"wr mem 1"+"\n")
+  
+  
+  
+  var input = $("#input3").val(input1)
+})  
+
+$("#selectBox").change(function(){
+    var temp_1= $('.out1').text()
+    var temp_2= $('.out2').text()
+    var temp_3= $('.out3').text()
+    var temp_4= $('.out4').text()
+    var temp_5= $('.out5').text()
+    var temp_6= $('.out6').text()
+    var temp_7= $('.out7').text()
+    var temp_8= $('.out8').text()
+    var temp_9= $('.out9').text()
+    var t = $(this).val(); 
+    console.log(t)
+    if(t== "1"){   
+     $(".output3").text(temp_1)
+    }else if(t== "2"){  
+    $(".output3").text(temp_2)
+    }else if(t== "3"){  
+    $(".output3").text(temp_3)
+    }else if(t== "4"){   
+    $(".output3").text(temp_4)  
+    }else if(t== "5"){  
+    $(".output3").text(temp_5)
+    }else if(t== "6"){  
+    $(".output3").text(temp_6)
+    }else if(t== "7"){  
+    $(".output3").text(temp_7)
+    }else if(t== "8"){  
+    $(".output3").text(temp_8)
+    }else if(t== "9"){   
+    $(".output3").text(temp_9)
+    }
+})
+
+$("#btn_replace").click(function(){
+  $("#selectBox").val("");
+  var temp_text= $(".output3").text()
+  var x1= $("#input_word1").val()
+  var x2= $("#input_word2").val()
+   
+  function highlightText(text,word,word2){
+  var replaceRegExp = new RegExp("("+word+")","g")
+  return text.replace(replaceRegExp,word2)   
+}
+  
+  var textHighlighted =highlightText(temp_text,x1,x2)
+  $(".output3").text(textHighlighted)   
+ 
+})
+
+$("#btn_delete_vlan2").click(function(){
+  var input = $("#input3").val()
+  $("#selectBox").val("");
+  $(".output3").text("")
+  var input1 = input
+  // console.log(input)
+  var datas = []
+  var datas1 = []
+  var vlan = []
+  var totals = []
+  var te = input.replace("中華電信北區OPTIMA","")
+  var temp = te.split("1-")
+  for(var i=1; i<temp.length ; i++){
+    var a= temp[i].replace("\n",",")
+    var q=a.replace("   ,","")
+    var aa=q.replace("(MOD)","").trim()
+    if(aa.indexOf("     ")!=-1){
+       var aaa=aa.split("     ") 
+    } else {
+       var aaa=aa.split("   ") 
+    } 
+   
+    datas.push(aaa) 
+
+  }
+  for(var i=0;i<datas.length;i++){
+    var b=datas[i]
+     // console.log(b)
+    if(b[1]==undefined){   
+    }else{
+      datas1.push(b) 
+    }   
+  }  
+
+  for(var i=0;i<datas1.length;i++){
+    // console.log(i)
+    var c=datas1[i]
+     // console.log(c)
+    var num=parseInt(c[0])
+    var vlan=c[1].split(",")
+    // console.log(vlan)
+    totals[i]= {
+    name: num,
+    vlan: vlan
+    }
+  }
+  
+  for(var i=0;i<datas1.length;i++){
+    if(totals[i].name==1){
+    var tmp_array1 = totals[i].vlan
+    console.log(tmp_array1)
+  } else if(totals[i].name==2){
+    var tmp_array2 = totals[i].vlan
+    console.log(tmp_array2)
+  } else if(totals[i].name==3){
+    var tmp_array3 = totals[i].vlan
+  } else if(totals[i].name==4){
+    var tmp_array4 = totals[i].vlan
+  } else if(totals[i].name==5){
+    var tmp_array5 = totals[i].vlan
+  } else if(totals[i].name==6){
+    var tmp_array6 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==9){
+    var tmp_array9 = totals[i].vlan
+  } else if(totals[i].name==10){
+    var tmp_array10 = totals[i].vlan
+  } else if(totals[i].name==11){
+    var tmp_array11 = totals[i].vlan
+  }else if(totals[i].name==12){
+    var tmp_array12 = totals[i].vlan
+  }
+  }
+  
+  
+ function delete_zxyel_vlan(vlan,num){
+    $(".out"+num).append("no vlan "+vlan+"\n")
+    $(".output3").append("no vlan "+vlan+"\n")
+  
+}    
+  $(".out1").html("").append("config"+"\n")
+  $(".out2").html("").append("config"+"\n")
+  $(".out3").html("").append("config"+"\n")
+  $(".out4").html("").append("config"+"\n")
+  $(".out5").html("").append("config"+"\n")
+  $(".out6").html("").append("config"+"\n")
+  $(".out7").html("").append("config"+"\n")
+  $(".out8").html("").append("config"+"\n")
+  $(".out9").html("").append("config"+"\n")
+  $(".output3").append("config"+"\n")
+
+  for (var i in tmp_array1) { 
+    delete_zxyel_vlan(tmp_array1[i],1)
+   }
+  for (var i in tmp_array2) { 
+    delete_zxyel_vlan(tmp_array2[i],2)
+   }
+  for (var i in tmp_array3) { 
+    delete_zxyel_vlan(tmp_array3[i],3)
+   }
+  for (var i in tmp_array4) { 
+     delete_zxyel_vlan(tmp_array4[i],4)
+   }
+  for (var i in tmp_array5) { 
+      delete_zxyel_vlan(tmp_array5[i],5)
+   }
+  for (var i in tmp_array6) { 
+     delete_zxyel_vlan(tmp_array6[i],6)
+   }
+  for (var i in tmp_array7) { 
+      delete_zxyel_vlan(tmp_array7[i],7)
+   }
+  for (var i in tmp_array8) { 
+      delete_zxyel_vlan(tmp_array8[i],8)
+   }
+  for (var i in tmp_array9) { 
+      delete_zxyel_vlan(tmp_array9[i],9)
+   }
+
+  
+  $(".output3").append("exit"+"\n"+"wr mem 1"+"\n")
+ $(".out1").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out2").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out3").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out4").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out5").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out6").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out7").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out8").append("exit"+"\n"+"wr mem 1"+"\n")
+  $(".out9").append("exit"+"\n"+"wr mem 1"+"\n")
+  
+  var input = input1
+  
+})  
+
+$("#btn_input_clear2").click(function(){
+  var input = $("#input3").val("")
+  $("#selectBox").val("");
+})
+
+$("#btn_output_clear2").click(function(){
+  var input = $(".output3").text("")
+  $("#selectBox").val("");
+  var x1= $("#input_word1").val("")
+  var x2= $("#input_word2").val("")
+})
+
+$("#btn_copy2").click(function(){
+  var clip_area = $('.output3');
+  $("#selectBox").val("");
+  clip_area.text();
+  clip_area.select();
+  document.execCommand('copy');
+});
+
+// Dlink (fixd 10 or 12)
+
+$("#btn_create_vlan_dlink2").click(function(){
+  var input = $("#input4").val()
+  $("#selectBox2").val("");
+  $(".output4").text("")
+   var input1 = input
+  // console.log(input)
+  var datas = []
+  var datas1 = []
+  var vlan = []
+  var totals = []
+  var te = input.replace("中華電信北區OPTIMA","")
+  var temp = te.split("1-")
+  for(var i=1; i<temp.length ; i++){
+    var a= temp[i].replace("\n",",")
+    var q=a.replace("   ,","")
+    var aa=q.replace("(MOD)","").trim()
+    if(aa.indexOf("     ")!=-1){
+       var aaa=aa.split("     ") 
+    } else {
+       var aaa=aa.split("   ") 
+    } 
+   
+    datas.push(aaa) 
+    
+  }
+
+  console.log(datas.length)
+  for(var i=0;i<datas.length;i++){
+    var b=datas[i]
+     // console.log(b)
+    if(b[1]==undefined){   
+    }else{
+      datas1.push(b) 
+
+    }   
+  }  
+
+  for(var i=0;i<datas1.length;i++){
+    // console.log(i)
+    var c=datas1[i]
+    var num=parseInt(c[0])
+    var vlan=c[1].split(",")
+
+    totals[i]= {
+    name: num,
+    vlan: vlan
+    }
+     // console.log(totals[i])
+  }
+
+  for(var i=0;i<datas1.length;i++){
+  if(totals[i].name==1){
+    var tmp_array1 = totals[i].vlan
+  } else if(totals[i].name==2){
+    var tmp_array2 = totals[i].vlan
+  } else if(totals[i].name==3){
+    var tmp_array3 = totals[i].vlan
+  } else if(totals[i].name==4){
+    var tmp_array4 = totals[i].vlan
+  } else if(totals[i].name==5){
+    var tmp_array5 = totals[i].vlan
+  } else if(totals[i].name==6){
+    var tmp_array6 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==9){
+    var tmp_array9 = totals[i].vlan
+  } else if(totals[i].name==10){
+    var tmp_array10 = totals[i].vlan
+  } else if(totals[i].name==11){
+    var tmp_array11 = totals[i].vlan
+  }else if(totals[i].name==12){
+    var tmp_array12 = totals[i].vlan
+  }
+  }
+  
+    function create_dlink_vlan(vlan,num){
+    if (tmp_array10!= null && tmp_array12!=null) { 
+     if (tmp_array10.indexOf(vlan)!=-1) {  
+        if (vlan<10){
+        $(".outpu"+num).append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",10"+"\n")   
+        $(".output4").append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",10"+"\n")
+      }
+        else if(vlan<100){
+        $(".outpu"+num).append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",10"+"\n")
+        $(".output4").append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",10"+"\n")
+      }
+        else if(vlan<1000){
+        $(".outpu"+num).append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",10"+"\n")
+        $(".output4").append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",10"+"\n")
+      } 
+        else if(vlan<10000){
+        $(".outpu"+num).append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",10"+"\n")
+        $(".output4").append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",10"+"\n")
+      }   }               
+     else if (tmp_array12.indexOf(vlan)!=-1){    
+        if (vlan<10){
+          $(".outpu"+num).append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",12"+"\n")
+          $(".output4").append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",12"+"\n")
+        }
+        else if(vlan<100){
+          $(".outpu"+num).append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",12"+"\n")
+          $(".output4").append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",12"+"\n")
+        }
+        else if(vlan<1000){
+          $(".outpu"+num).append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",12"+"\n")
+          $(".output4").append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",12"+"\n")
+        } 
+        else if(vlan<10000){
+          $(".outpu"+num).append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",12"+"\n")
+          $(".output4").append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",12"+"\n")
+        } }     
+   }      
+    else if (tmp_array10!= null && tmp_array12==null) { 
+     if (tmp_array10.indexOf(vlan)!=-1) {  
+        if (vlan<10){
+        $(".outpu"+num).append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",10"+"\n")   
+        $(".output4").append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",10"+"\n")
+      }
+        else if(vlan<100){
+        $(".outpu"+num).append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",10"+"\n")
+        $(".output4").append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",10"+"\n")
+      }
+        else if(vlan<1000){
+        $(".outpu"+num).append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",10"+"\n")
+        $(".output4").append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",10"+"\n")
+      } 
+        else if(vlan<10000){
+        $(".outpu"+num).append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",10"+"\n")
+        $(".output4").append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",10"+"\n")
+      }   }               
+   }  
+    else if (tmp_array12!= null && tmp_array10==null) { 
+     if (tmp_array12.indexOf(vlan)!=-1){    
+        if (vlan<10){
+          $(".outpu"+num).append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",12"+"\n")
+          $(".output4").append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",12"+"\n")
+        }
+        else if(vlan<100){
+          $(".outpu"+num).append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",12"+"\n")
+          $(".output4").append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",12"+"\n")
+        }
+        else if(vlan<1000){
+          $(".outpu"+num).append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",12"+"\n")
+          $(".output4").append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",12"+"\n")
+        } 
+        else if(vlan<10000){
+          $(".outpu"+num).append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",12"+"\n")
+          $(".output4").append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",12"+"\n")
+        } }        
+   }      
+} 
+  
+  
+//   function create_dlink_vlan(vlan,num){
+//    if (tmp_array10.indexOf(vlan)!=-1) {  
+//       if (vlan<10){
+//       $(".outpu"+num).append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",10"+"\n")   
+//       $(".output4").append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",10"+"\n")
+//     }
+//       else if(vlan<100){
+//       $(".outpu"+num).append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",10"+"\n")
+//       $(".output4").append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",10"+"\n")
+//     }
+//       else if(vlan<1000){
+//       $(".outpu"+num).append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",10"+"\n")
+//       $(".output4").append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",10"+"\n")
+//     } 
+//       else if(vlan<10000){
+//       $(".outpu"+num).append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",10"+"\n")
+//       $(".output4").append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",10"+"\n")
+//     }   }               
+//    else if (tmp_array12.indexOf(vlan)!=-1){    
+//       if (vlan<10){
+//         $(".outpu"+num).append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",12"+"\n")
+//         $(".output4").append("create vlan v000"+vlan+" tag "+vlan+"\n"+"config vlan v000"+vlan+" add tag "+num+",12"+"\n")
+//       }
+//       else if(vlan<100){
+//         $(".outpu"+num).append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",12"+"\n")
+//         $(".output4").append("create vlan v00"+vlan+" tag "+vlan+"\n"+"config vlan v00"+vlan+" add tag "+num+",12"+"\n")
+//       }
+//       else if(vlan<1000){
+//         $(".outpu"+num).append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",12"+"\n")
+//         $(".output4").append("create vlan v0"+vlan+" tag "+vlan+"\n"+"config vlan v0"+vlan+" add tag "+num+",12"+"\n")
+//       } 
+//       else if(vlan<10000){
+//         $(".outpu"+num).append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",12"+"\n")
+//         $(".output4").append("create vlan v"+vlan+" tag "+vlan+"\n"+"config vlan v"+vlan+" add tag "+num+",12"+"\n")
+//       } }             
+// }    
+  
+  $(".outpu1").html("")
+  $(".outpu2").html("")
+  $(".outpu3").html("")
+  $(".outpu4").html("")
+  $(".outpu5").html("")
+  $(".outpu6").html("")
+  $(".outpu7").html("")
+  $(".outpu8").html("")
+  $(".outpu9").html("")
+  
+  
+  for (var i in tmp_array1) { 
+    create_dlink_vlan(tmp_array1[i],1)
+   }
+  for (var i in tmp_array2) { 
+    create_dlink_vlan(tmp_array2[i],2)
+  }
+  for (var i in tmp_array3) { 
+    create_dlink_vlan(tmp_array3[i],3)
+    }
+
+  for (var i in tmp_array4) { 
+    create_dlink_vlan(tmp_array4[i],4)
+    }
+
+  for (var i in tmp_array5) { 
+    create_dlink_vlan(tmp_array5[i],5)
+    }
+
+  for (var i in tmp_array6) { 
+    create_dlink_vlan(tmp_array6[i],6)
+    }
+
+  for (var i in tmp_array7) { 
+      create_dlink_vlan(tmp_array7[i],7)
+    }
+
+  for (var i in tmp_array8) { 
+     create_dlink_vlan(tmp_array8[i],8)
+    }
+
+  for (var i in tmp_array9) { 
+     create_dlink_vlan(tmp_array9[i],9)
+    }
+  
+  
+  $(".output4").append("save"+"\n")
+  $(".outpu1").append("save"+"\n")
+  $(".outpu2").append("save"+"\n")
+  $(".outpu3").append("save"+"\n")
+  $(".outpu4").append("save"+"\n")
+  $(".outpu5").append("save"+"\n")
+  $(".outpu6").append("save"+"\n")
+  $(".outpu7").append("save"+"\n")
+  $(".outpu8").append("save"+"\n")
+  $(".outpu9").append("save"+"\n")
+  var input = $("#input4").val(input1)
+})  
+
+$("#selectBox2").change(function(){
+    var tem_1= $('.outpu1').text()
+    var tem_2= $('.outpu2').text()
+    var tem_3= $('.outpu3').text()
+    var tem_4= $('.outpu4').text()
+    var tem_5= $('.outpu5').text()
+    var tem_6= $('.outpu6').text()
+    var tem_7= $('.outpu7').text()
+    var tem_8= $('.outpu8').text()
+    var tem_9= $('.outpu9').text()
+    var t = $(this).val(); 
+    console.log(t)
+    if(t== "1"){   
+     $(".output4").text(tem_1)
+    }else if(t== "2"){  
+    $(".output4").text(tem_2)
+    }else if(t== "3"){  
+    $(".output4").text(tem_3)
+    }else if(t== "4"){   
+    $(".output4").text(tem_4)  
+    }else if(t== "5"){  
+    $(".output4").text(tem_5)
+    }else if(t== "6"){  
+    $(".output4").text(tem_6)
+    }else if(t== "7"){  
+    $(".output4").text(tem_7)
+    }else if(t== "8"){  
+    $(".output4").text(tem_8)
+    }else if(t== "9"){   
+    $(".output4").text(tem_9)
+    }
+})
+
+$("#btn_delete_vlan_dlink2").click(function(){
+  var input = $("#input4").val()
+  $("#selectBox2").val("");
+  $(".output4").text("")
+  var input1 = input
+  // console.log(input)
+  var datas = []
+  var datas1 = []
+  var vlan = []
+  var totals = []
+  var te = input.replace("中華電信北區OPTIMA","")
+  var temp = te.split("1-")
+  for(var i=1; i<temp.length ; i++){
+    var a= temp[i].replace("\n",",")
+    var q=a.replace("   ,","")
+    var aa=q.replace("(MOD)","").trim()
+    if(aa.indexOf("     ")!=-1){
+       var aaa=aa.split("     ") 
+    } else {
+       var aaa=aa.split("   ") 
+    } 
+   
+    datas.push(aaa) 
+
+  }
+
+  console.log(datas.length)
+  for(var i=0;i<datas.length;i++){
+    var b=datas[i]
+     // console.log(b)
+    if(b[1]==undefined){   
+    }else{
+      datas1.push(b) 
+
+    }   
+  }  
+
+  for(var i=0;i<datas1.length;i++){
+    // console.log(i)
+    var c=datas1[i]
+     // console.log(c)
+    var num=parseInt(c[0])
+    var vlan=c[1].split(",")
+    // console.log(vlan)
+    totals[i]= {
+    name: num,
+    vlan: vlan
+    }
+     // console.log(totals[i])
+  }
+  
+  for(var i=0;i<datas1.length;i++){
+    if(totals[i].name==1){
+    var tmp_array1 = totals[i].vlan
+    console.log(tmp_array1)
+  } else if(totals[i].name==2){
+    var tmp_array2 = totals[i].vlan
+    console.log(tmp_array2)
+  } else if(totals[i].name==3){
+    var tmp_array3 = totals[i].vlan
+  } else if(totals[i].name==4){
+    var tmp_array4 = totals[i].vlan
+  } else if(totals[i].name==5){
+    var tmp_array5 = totals[i].vlan
+  } else if(totals[i].name==6){
+    var tmp_array6 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==7){
+    var tmp_array7 = totals[i].vlan
+  } else if(totals[i].name==8){
+    var tmp_array8 = totals[i].vlan
+  } else if(totals[i].name==9){
+    var tmp_array9 = totals[i].vlan
+  } else if(totals[i].name==10){
+    var tmp_array10 = totals[i].vlan
+  } else if(totals[i].name==11){
+    var tmp_array11 = totals[i].vlan
+  }else if(totals[i].name==12){
+    var tmp_array12 = totals[i].vlan
+  }
+  }
+    
+  function delete_dlink_vlan(vlan,num){
+      if (vlan<10){
+        $(".outpu"+num).append("delete vlan v000"+vlan+"\n")  
+        $(".output4").append("delete vlan v000"+vlan+"\n")
+      }
+      else if(vlan<100){
+        $(".outpu"+num).append("delete vlan v00"+vlan+"\n")  
+        $(".output4").append("delete vlan v00"+vlan+"\n")
+      }
+      else if(vlan<1000){
+        $(".outpu"+num).append("delete vlan v0"+vlan+"\n")  
+        $(".output4").append("delete vlan v0"+vlan+"\n")
+      } 
+      else if(vlan<10000){
+        $(".outpu"+num).append("delete vlan v"+vlan+"\n")  
+        $(".output4").append("delete vlan v"+vlan+"\n")
+      }     
+  }
+  
+  $(".outpu1").html("")
+  $(".outpu2").html("")
+  $(".outpu3").html("")
+  $(".outpu4").html("")
+  $(".outpu5").html("")
+  $(".outpu6").html("")
+  $(".outpu7").html("")
+  $(".outpu8").html("")
+  $(".outpu9").html("")
+  
+  
+   if(typeof(tmp_array1)!="undefined"){
+     for(var i=0;i<tmp_array1.length;i++){
+       delete_dlink_vlan(tmp_array1[i],1)
+     }
+   }
+
+   if(typeof(tmp_array2)!="undefined"){
+     for(var i=0;i<tmp_array2.length;i++){
+      delete_dlink_vlan(tmp_array2[i],2)
+     }
+   }
+
+   if(typeof(tmp_array3)!="undefined"){
+     for(var i=0;i<tmp_array3.length;i++){
+       delete_dlink_vlan(tmp_array3[i],3)
+     }
+   }
+
+
+   if(typeof(tmp_array4)!="undefined"){
+     for(var i=0;i<tmp_array4.length;i++){
+       delete_dlink_vlan(tmp_array4[i],4)
+     }
+   }
+
+   if(typeof(tmp_array5)!="undefined"){
+     for(var i=0;i<tmp_array5.length;i++){
+       delete_dlink_vlan(tmp_array5[i],5)
+     }
+   }
+    
+   if(typeof(tmp_array6)!="undefined"){
+     for(var i=0;i<tmp_array6.length;i++){
+       delete_dlink_vlan(tmp_array6[i],6)
+     }
+   }
+
+   if(typeof(tmp_array7)!="undefined"){
+     for(var i=0;i<tmp_array7.length;i++){
+       delete_dlink_vlan(tmp_array7[i],7)
+     }
+   }
+
+   if(typeof(tmp_array8)!="undefined"){
+     for(var i=0;i<tmp_array8.length;i++){
+       delete_dlink_vlan(tmp_array8[i],8)
+     }
+   }
+
+   if(typeof(tmp_array9)!="undefined"){
+     for(var i=0;i<tmp_array9.length;i++){
+       delete_dlink_vlan(tmp_array9[i],9)
+     }
+   }
+
+  $(".output4").append("save"+"\n")
+  $(".outpu1").append("save"+"\n")
+  $(".outpu2").append("save"+"\n")
+  $(".outpu3").append("save"+"\n")
+  $(".outpu4").append("save"+"\n")
+  $(".outpu5").append("save"+"\n")
+  $(".outpu6").append("save"+"\n")
+  $(".outpu7").append("save"+"\n")
+  $(".outpu8").append("save"+"\n")
+  $(".outpu9").append("save"+"\n")
+  $(".outpu10").append("save"+"\n")
+   var input = input1
+  
+})  
+
+$("#btn_input_clear_dlink2").click(function(){
+  var input = $("#input4").val("")
+  $("#selectBox2").val("");
+})
+
+$("#btn_output_clear_dlink2").click(function(){
+  var input = $(".output4").text("")
+  $("#selectBox2").val("");
+  var x3= $("#input_word3").val("")
+  var x4= $("#input_word4").val("")
+})
+
+$("#btn_copy_dlink2").click(function(){
+  var clip_area = $('.output4');
+  $("#selectBox2").val("");
+  clip_area.text();
+  clip_area.select();
+  document.execCommand('copy');
+});
+
+$("#btn_replace2").click(function(){
+
+  var temp_text= $(".output4").text()
+  $("#selectBox2").val("");
+  var x3= $("#input_word3").val()
+  var x4= $("#input_word4").val()
+   
+  function highlightText(text,word,word2){
+  var replaceRegExp = new RegExp("("+word+")","g")
+  return text.replace(replaceRegExp,word2)   
+}
+  
+  var textHighlighted =highlightText(temp_text,x3,x4)
+  $(".output4").text(textHighlighted)   
+ 
+})
+
+
+
+
+
+
+
